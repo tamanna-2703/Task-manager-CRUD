@@ -12,7 +12,7 @@ const envSchema = z.object({
 })
 
 export const envConfig = envSchema.parse({
-  APP_PORT: process.env.APP_PORT,
+  APP_PORT: process.env.APP_PORT || process.env.PORT,
   STAGE: process.env.STAGE,
   DATABASE_URL: process.env.DATABASE_URL,
 })
