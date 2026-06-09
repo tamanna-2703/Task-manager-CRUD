@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "bun --watch src/server.ts"
+    "dev": "bun --watch src/server.ts",
+    "build": "prisma generate",
+    "start": "bun src/server.ts"
   },
   "devDependencies": {
     "@prisma/client": "^7.4.2",
